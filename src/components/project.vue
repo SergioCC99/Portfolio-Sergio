@@ -129,7 +129,7 @@ const closeImage = () => {
             </div>
         </div>
         <div class="img-contact-container">
-            <img src="../images/desk.png" alt="Imagen contacto" class="imgcontact" loading="lazy" >
+            <img src="/images/desk.png" alt="Imagen contacto" class="imgcontact" loading="lazy" >
         </div>
       </section>
 

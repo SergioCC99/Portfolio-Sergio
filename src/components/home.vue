@@ -32,7 +32,7 @@ const LabelClass = (index) => {
                 <div class="label3"><p>3 years Exp.</p></div>
             </div>
         </div>
-        <img src="../images/profileimg.png" alt="Foto personal" class="imghero">
+        <img src="/images/profileimg.png" alt="Foto personal" class="imghero">
     </section>
 
 
@@ -90,7 +90,7 @@ const LabelClass = (index) => {
             </div>
         </div>
         <div class="img-contact-container">
-            <img src="../images/desk.png" alt="Imagen contacto" class="imgcontact">
+            <img src="/images/desk.png" alt="Imagen contacto" class="imgcontact">
         </div>
 
     </section>

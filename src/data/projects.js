@@ -1,7 +1,7 @@
 export const projects = [
   {
   id: 1,
-  imageBanner: "/src/images/MentalitatWeb/BannerGMS.png",
+  imageBanner: "/images/MentalitatWeb/BannerGMS.png",
   title: "Mentalitat Web Redesign",
   labels: ["Real Case", "UX/UI Design"],
 
@@ -41,18 +41,18 @@ export const projects = [
   ],
 
   images: [
-    "/src/images/MentalitatWeb/Proccess0.png",
-    "/src/images/MentalitatWeb/Proccess1.png",
-    "/src/images/MentalitatWeb/Proccess2.png",
-    "/src/images/MentalitatWeb/Proccess3.png",
-    "/src/images/MentalitatWeb/Proccess4.png",
+    "/images/MentalitatWeb/Proccess0.png",
+    "/images/MentalitatWeb/Proccess1.png",
+    "/images/MentalitatWeb/Proccess2.png",
+    "/images/MentalitatWeb/Proccess3.png",
+    "/images/MentalitatWeb/Proccess4.png",
   ],
 
   floatImages: [
-    "/src/images/MentalitatWeb/GMS0.png",
-    "/src/images/MentalitatWeb/GMS1.png",
-    "/src/images/MentalitatWeb/GMS2.png",
-    "/src/images/MentalitatWeb/GMS3.png",
+    "/images/MentalitatWeb/GMS0.png",
+    "/images/MentalitatWeb/GMS1.png",
+    "/images/MentalitatWeb/GMS2.png",
+    "/images/MentalitatWeb/GMS3.png",
   ],
 
   learning:
@@ -62,7 +62,7 @@ export const projects = [
 {
   id: 2,
 
-  imageBanner: "/src/images/BillingModule/BannerBilling.png",
+  imageBanner: "/images/BillingModule/BannerBilling.png",
 
   title: "Billing Module SaaS",
 
@@ -104,30 +104,29 @@ export const projects = [
     "Co-creation process with billing team members"
   ],
   images: [
-    "/src/images/BillingModule/Proccess0.png",
-    "/src/images/BillingModule/Proccess1.png",
-    "/src/images/BillingModule/Proccess2.png",
-    "/src/images/BillingModule/Proccess3.png",
+    "/images/BillingModule/Proccess0.png",
+    "/images/BillingModule/Proccess1.png",
+    "/images/BillingModule/Proccess2.png",
+    "/images/BillingModule/Proccess3.png",
   ],
 
   learning:
     "This project helped me understand how small friction points repeated hundreds of times per day can create a huge operational impact. Research revealed that the problem was not only related to the interface, but also to fragmented workflows, repetitive manual tasks, and the lack of automation. By designing together with the operational team, we created a much more efficient solution focused on reducing administrative workload and allowing the team to spend more time on high-value tasks such as auditing and account validation.",
 
   floatImages: [
-    "/src/images/BillingModule/Billing1.png",
-    "/src/images/BillingModule/Billing2.png",
-    "/src/images/BillingModule/Billing3.png",
-    "/src/images/BillingModule/Billing4.png",
+    "/images/BillingModule/Billing1.png",
+    "/images/BillingModule/Billing2.png",
+    "/images/BillingModule/Billing3.png",
+    "/images/BillingModule/Billing4.png",
     
   ]
 
 },
 
-
 {
   id: 3,
 
-  imageBanner: "/src/images/CRM/CrmBanner.png",
+  imageBanner: "/images/CRM/CrmBanner.png",
 
   title: "Meditat Operational CRM",
 
@@ -174,9 +173,9 @@ export const projects = [
   "This project helped me understand the importance of designing internal tools focused on operational clarity and decision-making. I learned that a CRM should not only look visually appealing, but also organize large amounts of information in a simple, actionable, and easy-to-interpret way for different business profiles. It also reinforced how data visualization and AI-assisted workflows can reduce dependency on manual processes, optimize product development workflows, and significantly improve an organization’s analytical capabilities.",
   
   floatImages: [
-    "/src/images/CRM/CRM1.png",
-    "/src/images/CRM/CRM2.png",
-    "/src/images/CRM/CRM3.png", 
+    "/images/CRM/CRM1.png",
+    "/images/CRM/CRM2.png",
+    "/images/CRM/CRM3.png", 
   ]
 
 },
@@ -184,7 +183,7 @@ export const projects = [
 {
   id: 4,
 
-  imageBanner: "/src/images/TeBo/TeBoBanner.png",
+  imageBanner: "/images/TeBo/TeBoBanner.png",
 
   title: "TeBo Wellness App",
 
@@ -230,11 +229,11 @@ export const projects = [
     "This project reinforced the importance of designing digital experiences that feel emotionally supportive, simple, and sustainable over time. I learned how small UX decisions related to guidance, motivation, and clarity can significantly influence user engagement and habit consistency. It also helped me better understand how AI-assisted interactions can complement wellbeing experiences in a more human and personalized way.",
   
   floatImages: [
-    "/src/images/TeBo/TeBo1.png",
-    "/src/images/TeBo/TeBo2.png",
-    "/src/images/TeBo/TeBo3.png",
-    "/src/images/TeBo/TeBo4.png",
-    "/src/images/TeBo/TeBo5.png",
+    "/images/TeBo/TeBo1.png",
+    "/images/TeBo/TeBo2.png",
+    "/images/TeBo/TeBo3.png",
+    "/images/TeBo/TeBo4.png",
+    "/images/TeBo/TeBo5.png",
   ]
     
 },
@@ -242,7 +241,7 @@ export const projects = [
 {
   id: 5,
 
-  imageBanner: "/src/images/Tripflow/TripflowBanner.png",
+  imageBanner: "/images/Tripflow/TripflowBanner.png",
 
   title: "TripFlow Budget Travel App",
 
@@ -285,16 +284,16 @@ export const projects = [
   ],
 
   images: [
-    "/src/images/Tripflow/Proccess1.png",
-    "/src/images/Tripflow/Proccess2.png",
-    "/src/images/Tripflow/Proccess3.png",
+    "/images/Tripflow/Proccess1.png",
+    "/images/Tripflow/Proccess2.png",
+    "/images/Tripflow/Proccess3.png",
   ],
 
   learning:
     "This project helped me better understand how financial uncertainty can directly affect the travel experience and how UX design can reduce stress through clarity and visibility. Research played a key role in identifying real user frustrations related to currency exchange, spending control, and budget planning. It also reinforced the importance of designing simple financial experiences that help users make faster and more confident decisions.",
   
   floatImages: [
-    "/src/images/Tripflow/Trip1.png"
+    "/images/Tripflow/Trip1.png"
   ]
 
 }

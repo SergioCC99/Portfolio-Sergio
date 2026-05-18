@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <a href="#">
-      <img src="../images/Logo1.png" alt="Logo" class="logo" v-on:click="() => $router.push('/')"/>
+      <img src="/images/Logo1.png" alt="Logo" class="logo" v-on:click="() => $router.push('/')"/>
     </a>
     <nav>
       <a href="#projects">Projects</a>

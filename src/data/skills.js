@@ -1,0 +1,16 @@
+export const skills = [
+"UX Research",
+"UX Design",
+"UI Design",
+"IA skills",
+"Prototyping",
+"Figma",
+"Notion",
+"Maze",
+"HTML",
+"CSS",
+"Design Systems",
+"Usability Testing",
+"Iteration",
+"Grow Product",
+];

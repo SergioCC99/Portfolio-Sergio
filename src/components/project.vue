@@ -30,7 +30,7 @@ const closeImage = () => {
     <div class =main>
 
       <!--Botón volver-->
-      <button class="backbutton" @click="$router.back()"><span class="material-symbols-outlined">arrow_back_ios</span>Volver</button>
+      <button class="backbutton" @click="$router.back()"><span class="material-symbols-outlined">arrow_back_ios</span>Back</button>
 
       <!--INTRO-->
       <section class="case-hero">

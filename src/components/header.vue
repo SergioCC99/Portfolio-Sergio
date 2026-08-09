@@ -17,7 +17,7 @@ const closeMenu = () => {
     <a href="#">
       <img src="/images/Logo1.webp" alt="Logo" class="logo" v-on:click="() => $router.push('/')" decoding="async"/>
     </a>
-    <nav>
+    <nav class="primary-nav">
       <div class="nav-links">
           <a href="#projects">Projects</a>
           <a href="#about">About me</a>

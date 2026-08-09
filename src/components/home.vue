@@ -12,6 +12,7 @@ const LabelClass = (index) => {
 </script>
 
 <template>
+  <div>
     <HeaderSection />
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -32,21 +33,23 @@ const LabelClass = (index) => {
                 <div class="label3"><p>3 years Exp.</p></div>
             </div>
         </div>
-        <img src="/images/profileimg.png" alt="Foto personal" class="imghero">
+        <div class="hero-image-wrap">
+            <img src="/images/profileimg.webp" alt="Foto personal" class="imghero" width="380" height="400" fetchpriority="high" decoding="async">
+        </div>
     </section>
 
 
     <!-- Projects -->
     <section id="projects" class="projects">
-        <div class="TitleSection">
+        <div class="TitleSection" v-reveal>
             <p>Selected work</p>
             <h2>Featured Projects</h2>
         </div>
         <!-- Grid Projects -->
         <div class="GridProjects">
-            <router-link class="CardProject" v-for="project in projects" :key="project.title" :to="`/project/${project.id}`">
+            <router-link class="CardProject" v-for="(project, index) in projects" :key="project.title" :to="`/project/${project.id}`" v-reveal="index">
                 <div class="image-container">
-                    <img :src="project.imageBanner" :alt="project.title" class="Projectimg">
+                    <img :src="project.imageBanner" :alt="project.title" class="Projectimg" loading="lazy" decoding="async">
                 </div>
                 <h3>{{ project.title }}</h3>
                 <div class="labelsgroupsmall">
@@ -58,23 +61,23 @@ const LabelClass = (index) => {
 
     <!-- About me -->
     <section id="about" class="aboutme">
-        <div class="TitleSection">
+        <div class="TitleSection" v-reveal>
             <p>About me</p>
             <h2>Design is how I think.</h2>
         </div>
-        <div class="ContentAbout">
-           <p class="DescriptionAbout">I´m a UX/UI Designer with experience in startup environments and digital product development for companies in consumer goods, healthcare, technology, and innovation. I have worked on user-centered experiences for SaaS platforms, web and mobile applications, including mental health apps and clinical management software. I specialize in creating intuitive and visually appealing interfaces, always prioritizing usability and product consistency.</p> 
+        <div class="ContentAbout" v-reveal>
+           <p class="DescriptionAbout">I´m a UX/UI Designer with experience in startup environments and digital product development for companies in consumer goods, healthcare, technology, and innovation. I have worked on user-centered experiences for SaaS platforms, web and mobile applications, including mental health apps and clinical management software. I specialize in creating intuitive and visually appealing interfaces, always prioritizing usability and product consistency.</p>
            <div class="skills">
                 <h3>Core Skills</h3>
                 <div class="labelsgroup">
                     <div :class="LabelClass(index)" v-for="(skill,index) in skills" :key="skill"><p>{{skill}}</p></div>
                 </div>
-           </div> 
+           </div>
         </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="Contact">
+    <section id="contact" class="Contact" v-reveal>
         <div class="Information">
             <div class="TitleSectionWhite">
                 <p>Get in touch</p>
@@ -90,7 +93,7 @@ const LabelClass = (index) => {
             </div>
         </div>
         <div class="img-contact-container">
-            <img src="/images/desk.png" alt="Imagen contacto" class="imgcontact">
+            <img src="/images/desk.webp" alt="Imagen contacto" class="imgcontact" loading="lazy" decoding="async">
         </div>
 
     </section>
@@ -102,4 +105,5 @@ const LabelClass = (index) => {
             <a href="https://www.linkedin.com/in/sergiocombariza-uxdesign/" target="_blank">LinkedIn</a>
         </div>
     </footer>
+  </div>
 </template>

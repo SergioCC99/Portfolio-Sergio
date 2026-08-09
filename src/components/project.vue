@@ -23,9 +23,10 @@ const closeImage = () => {
 
 
 <template>
+  <div>
 
-  <img :src="project.imageBanner" :alt="project.title" class="banner-project" loading="lazy">
-  
+  <img :src="project.imageBanner" :alt="project.title" class="banner-project" fetchpriority="high" decoding="async">
+
   <div class="case-study">
     <div class =main>
 
@@ -33,7 +34,7 @@ const closeImage = () => {
       <button class="backbutton" @click="$router.back()"><span class="material-symbols-outlined">arrow_back_ios</span>Back</button>
 
       <!--INTRO-->
-      <section class="case-hero">
+      <section class="case-hero" v-reveal>
         <h1>{{ project.title }}</h1>
         <div class="labelsgroup">
           <span class="label" v-for="label in project.labels" :key="label">{{ label }}</span>
@@ -41,7 +42,7 @@ const closeImage = () => {
       </section>
 
       <!-- IMPACTO -->
-      <section class="case-impact">
+      <section class="case-impact" v-reveal>
         <div class="titlesection">
           <h2><span class="material-symbols-outlined">trending_up</span>impact</h2>
         </div>
@@ -50,7 +51,7 @@ const closeImage = () => {
 
       <section class="metrics">
         <div class="impact-metrics">
-          <div class="metric-card" v-for="metrics in project.metrics" :key="label">
+          <div class="metric-card" v-for="(metrics, index) in project.metrics" :key="label" v-reveal="index">
             <div class="metric-icon">
               <span class="material-symbols-outlined">{{metrics.icon}}</span>
               <h2>{{ metrics.number }}</h2>
@@ -61,7 +62,7 @@ const closeImage = () => {
       </section>
 
       <!-- PROBLEMA -->
-      <section class="case-problem">
+      <section class="case-problem" v-reveal>
         <div class="titlesection">
           <h2><span class="material-symbols-outlined">bomb</span>Problem</h2>
         </div>
@@ -74,7 +75,7 @@ const closeImage = () => {
           <h2><span class="material-symbols-outlined">automation</span>My process</h2>
         </div>
         <section class="StepsGroup">
-          <div class="step-card" v-for="(step, index) in project.process" :key="index">
+          <div class="step-card" v-for="(step, index) in project.process" :key="index" v-reveal="index">
             <span class="stepnumber">{{ index + 1  }}</span>
             <p>{{ step }}</p>
           </div>
@@ -85,24 +86,26 @@ const closeImage = () => {
 
         <!-- GRID -->
         <div class="grid">
-          <div v-for="(img, index) in project.images" :key="index" v-memo="[img]" class="image-container">
+          <div v-for="(img, index) in project.images" :key="index" v-memo="[img]" class="image-container" v-reveal="index">
             <img :src="img"class="grid-image" @click="openImage(img)"   loading="lazy" decoding="async"/>
           </div>
         </div>
 
         <!-- MODAL -->
-        <div v-if="selectedImage" class="modal">
+        <transition name="fade">
+          <div v-if="selectedImage" class="modal">
 
-        <!-- Botón cerrar -->
-        <button class="close-btn" @click="closeImage">✕</button>
+          <!-- Botón cerrar -->
+          <button class="close-btn" @click="closeImage">✕</button>
 
-        <img :src="selectedImage" class="modal-image" loading="lazy"/>
-        </div>
+          <img :src="selectedImage" class="modal-image" decoding="async"/>
+          </div>
+        </transition>
 
       </section>
 
       <!-- APRENDIZAJE -->
-      <section class="case-learning">
+      <section class="case-learning" v-reveal>
         <div class="titlesection">
           <h2><span class="material-symbols-outlined">lightbulb</span>Learning</h2>
         </div>
@@ -110,10 +113,10 @@ const closeImage = () => {
       </section>
       <!-- imagenes del proyecto -->
       <section class="imggroup">
-        <img v-for="(img, index) in project.floatImages" :key="index":src="img"class="Floatingimg" loading="lazy"/>
+        <img v-for="(img, index) in project.floatImages" :key="index" :src="img" class="Floatingimg" loading="lazy" decoding="async" v-reveal="index"/>
       </section>
       <!-- Contact -->
-      <section id="contact" class="Contact">
+      <section id="contact" class="Contact" v-reveal>
         <div class="Information">
             <div class="TitleSectionWhite">
                 <p>Get in touch</p>
@@ -129,7 +132,7 @@ const closeImage = () => {
             </div>
         </div>
         <div class="img-contact-container">
-            <img src="/images/desk.png" alt="Imagen contacto" class="imgcontact" loading="lazy" >
+            <img src="/images/desk.webp" alt="Imagen contacto" class="imgcontact" loading="lazy" decoding="async">
         </div>
       </section>
 
@@ -147,5 +150,6 @@ const closeImage = () => {
       </div>
   </footer>
 
+  </div>
 </template>
 
